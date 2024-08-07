@@ -1,0 +1,90 @@
+
+.registration-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px; /* Limita el ancho máximo */
+    margin: 180px auto;
+}
+
+.registration-form input {
+    width: 80%; /* Reduce el ancho de los inputs */
+    padding: 10px; /* Reduce el padding */
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px; /* Reduce el tamaño de la fuente */
+}
+
+.registration-form button {
+    width: 70%; /* Ajusta el ancho del botón */
+    padding: 10px;
+    margin: 6px 0;
+    background-color: red;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.alternative-text {
+    margin: 50px 0 5px;
+    color: #555;
+}
+
+.social-buttons {
+    justify-content: center;
+    gap: 15px; /* Aumenta ligeramente el espacio entre botones sociales */
+}
+
+.social-button {
+    width: 35px; /* Reduce ligeramente el tamaño de los botones sociales */
+    height: 35px;
+    line-height: 35px;
+    font-size: 18px;
+}
+.social-button.facebook {
+    background-color: #3b5998;
+    text-decoration: none;
+}
+
+.social-button.google {
+    background-color: #db4437;
+    text-decoration: none;
+}
+
+.social-button.apple {
+    background-color: #000;
+    text-decoration: none;
+}
+
+.login-link {
+    margin: 20px 0;
+}
+
+.login-link a {
+    color: red;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+.terms {
+    font-size: 12px;
+    color: #999;
+}
+
+.terms a {
+    color: red;
+    text-decoration: none;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}

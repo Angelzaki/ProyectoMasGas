@@ -1,0 +1,20 @@
+.container{
+    margin: 150px auto;
+}
+
+.navbar1 a{
+    font-size: 1.7rem;
+    color: red;
+    margin-left: 4rem;
+    transition: .3s;
+    text-decoration: none;
+}
+.navbar1 a:hover,
+.navbar1 a.active{
+    color: black;
+}
+#menu-icon{
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none;
+}

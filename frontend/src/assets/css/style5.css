@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --bg-color: red;
+    --second-bg-color: white;
+    --text-color: black;
+    --main-color: #0ef;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body{
+    background-color: var(--second-bg-color);
+    color: var(--text-color);
+}
+section{
+    padding:3rem 0% 0rem;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 7%;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.header.sticky {
+    border-bottom: .1rem solid rgba(0, 0, 0, .2);
+}
+.opciones {
+    background-color: red;
+}
+.logo{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 400;
+    cursor: default;
+}
+.opciones{
+    width: 100%;
+    padding: 7rem 7%;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.navbar a{
+    font-size: 1.7rem;
+    color: white;
+    margin-left: 4rem;
+    transition: .3s;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: white;
+}
+#menu-icon{
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none;
+}
+
+.registration-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.registration-form input {
+    width: 50%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.registration-form button {
+    width: 50%;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: red;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.registration-form button:hover {
+    background-color: darkred;
+}
+
+.alternative-text {
+    margin: 20px 0 10px;
+    color: #555;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.social-button {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 8px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.social-button.facebook {
+    background-color: #3b5998;
+}
+
+.social-button.google {
+    background-color: #db4437;
+}
+
+.social-button.apple {
+    background-color: #000;
+}
+
+.login-link {
+    margin: 20px 0;
+}
+
+.login-link a {
+    color: red;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+.terms {
+    font-size: 12px;
+    color: #999;
+}
+
+.terms a {
+    color: red;
+    text-decoration: none;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
+
+
+.logo1 {
+    padding: 10px 0;
+    background-color: #0462A3;
+    width: 100%;
+}
+
+.logo1 img {
+    width: 13%;
+    float: center;
+
+}
+
+footer {
+    background-color: #f0f0f0;
+    margin-top: 20px;
+}
+
+.footer-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-links-section {
+    background-color: #fff;
+    padding: 20px 0;
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+}
+
+.footer-section {
+    margin-bottom: 20px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.link-column {
+    margin: 10px 0;
+}
+
+.link-column h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.link-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.link-column li {
+    margin-bottom: 5px;
+}
+
+.link-column a {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s;
+}
+
+.link-column a:hover {
+    color: #007bff;
+}
+
+.footer-copyright-section {
+    background-color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.copyright {
+    font-size: 14px;
+    color: #777;
+}
+
+@media (max-width: 768px) {
+    .links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .link-column {
+        width: 100%;
+        text-align: center;
+    }
+}
