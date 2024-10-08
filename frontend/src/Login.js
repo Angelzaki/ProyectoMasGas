@@ -31,41 +31,43 @@ const Login = () => {
   };
 
   return (
-    <section className='wrapperformulario'>
-      <div className='wrapper'>
+    <section className='wrapperformulario flex justify-center items-center min-h-screen bg-gray-100'>
+      <div className='wrapper bg-white p-8 rounded-lg shadow-lg w-full max-w-md'>
         <form onSubmit={handleSubmit}>
-          <h1>Login</h1>
-          {error && <p className="error">{error}</p>}
-          <div className='input-box'>
+          <h1 className="text-2xl font-bold text-center mb-6">Login</h1>
+          {error && <p className="text-red-500 text-sm mb-4">{error}</p>}
+          <div className='input-box mb-4'>
             <input
               type="email"
               placeholder="Correo electrónico"
               required
               value={email}
               onChange={e => setEmail(e.target.value)}
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
-          <div className='input-box'>
+          <div className='input-box mb-4'>
             <input
               type="password"
               placeholder="Contraseña"
               required
               value={password}
               onChange={e => setPassword(e.target.value)}
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
-          <div className='remember-forgot'>
-            <button type="submit" className='btn' disabled={loading}>
+          <div className='remember-forgot mb-4'>
+            <button type="submit" className='w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 disabled:bg-blue-300' disabled={loading}>
               {loading ? 'Cargando...' : 'Iniciar Sesión'}
             </button>
           </div>
-          <div className='social-iniciar'>
-            <p className="alternative-text">Iniciar Sesión con</p>
+          <div className='social-iniciar mb-4'>
+            <p className="text-center text-sm text-gray-600">Iniciar Sesión con</p>
           </div>
-          <div className="social-buttons">
-            <a href="#" className="social-button facebook">f</a>
-            <a href="#" className="social-button google">G</a>
-            <a href="#" className="social-button apple">🍎</a>
+          <div className="social-buttons flex justify-around">
+            <a href="#" className="social-button facebook bg-blue-600 text-white w-10 h-10 flex justify-center items-center rounded-full">f</a>
+            <a href="#" className="social-button google bg-red-600 text-white w-10 h-10 flex justify-center items-center rounded-full">G</a>
+            <a href="#" className="social-button apple bg-gray-800 text-white w-10 h-10 flex justify-center items-center rounded-full">🍎</a>
           </div>
         </form>
       </div>
